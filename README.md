@@ -1,4 +1,4 @@
-# flappybird
+# Flappy Bird (remix)
 The famous game made with C++ and SFML
 
 ---
