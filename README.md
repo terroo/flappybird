@@ -28,4 +28,4 @@ make
 
 ---
 
-Game made in the video tutorial: <https://youtube.com/TerminalRootTV>
+Game made in the video tutorial: <https://youtu.be/lPDl6ul8-wg>
