@@ -6,7 +6,6 @@ FlappyBird::FlappyBird(){
     "Flappy Bird (remix)",
     sf::Style::Titlebar | sf::Style::Close
   );
-  window->setPosition(sf::Vector2i(0, 0));
   window->setFramerateLimit( 60 );
 
   gravity =  frame = {0.f};
@@ -60,7 +59,9 @@ FlappyBird::FlappyBird(){
 void FlappyBird::events(){
   auto e = std::make_shared<sf::Event>();
   while( window->pollEvent( *e ) ){
-    if( e->type == sf::Event::Closed){
+    if( e->type == sf::Event::Closed ||
+        e->type == sf::Event::KeyPressed &&
+        e->key.code == sf::Keyboard::Escape){
       window->close();
     }
   }
